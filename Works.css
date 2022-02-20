@@ -1,0 +1,25 @@
+.works {
+  text-align: center;
+}
+.works img {
+  width: auto;
+  height: auto;
+}
+.works .box {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+.works h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.works p {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .works .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

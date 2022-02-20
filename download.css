@@ -1,0 +1,42 @@
+.download {
+  background-color: #31b675;
+  color: white;
+  height: 75vh;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.download h1 {
+  font-size: 40px;
+}
+.download ul {
+  margin: 20px 0;
+}
+.download ul li {
+  margin: 10px 0;
+}
+.download .row img {
+  margin-right: 20px;
+}
+.download .row {
+  position: relative;
+}
+.download .image {
+  position: absolute;
+  left: 20%;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .download .flex_space {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .download .row {
+    width: 100%;
+  }
+  .download .row2 {
+    display: none;
+  }
+  .download {
+    height: 60vh;
+  }
+}

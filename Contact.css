@@ -1,0 +1,43 @@
+form textarea,
+form input {
+  width: 100%;
+  border: 2px solid #ececec;
+  margin-top: 10px;
+}
+.contact span {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+form span label {
+  color: crimson;
+}
+form .inputlast {
+  margin: 20px 0 20px 0;
+}
+form .primary-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+.contact p {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin: 10px 0;
+}
+/*-----------side-content-----------*/
+.side-content h3 {
+  margin-bottom: 15px;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+/*-----------side-content-----------*/
+@media screen and (max-width: 768px) {
+  .contact .flex {
+    flex-direction: column;
+  }
+}

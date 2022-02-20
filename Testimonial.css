@@ -1,0 +1,52 @@
+.Testimonial .box {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border-radius: 5px;
+}
+.Testimonial .box p {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.Testimonial .box hr {
+  height: 2px;
+  background-color: black;
+  margin: 20px 0 20px 0;
+  opacity: 0.2;
+}
+.Testimonial .box .img {
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+}
+.Testimonial .box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.Testimonial .box h3 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.Testimonial .box span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.Testimonial .box i {
+  font-size: 170px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #f1f1f1;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .Testimonial .grid1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

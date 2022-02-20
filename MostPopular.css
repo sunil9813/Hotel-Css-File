@@ -1,0 +1,121 @@
+.popular {
+  position: relative;
+}
+.popular::after {
+  content: "";
+  width: 100%;
+  height: 40vh;
+  background: #eaf8f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.popular img {
+  width: 100%;
+}
+.popular .card {
+  margin: 10px;
+}
+.popular .item {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+}
+.popular .imgae {
+  position: relative;
+}
+.popular .imgae i {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 20px;
+}
+.popular .imgae i label {
+  margin-left: 10px;
+  font-weight: normal;
+}
+.popular .details {
+  text-align: center;
+}
+.popular .rate {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: grey;
+}
+.popular .rate i {
+  margin: 2px;
+}
+.popular .cards h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #31b675;
+  position: relative;
+  margin-bottom: 30px;
+}
+.popular .cards h2::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 45%;
+  height: 1px;
+  width: 30px;
+  background: black;
+}
+.popular .cards h2::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 40%;
+  height: 1px;
+  width: 60px;
+  background: black;
+}
+.popular .cards h3 {
+  color: #31b675;
+  font-weight: 500;
+}
+.popular .cards h3 span {
+  color: grey;
+  font-weight: 300;
+  font-size: 15px;
+}
+.popular .content {
+  margin-bottom: 50px;
+}
+/*----- control btn -------*/
+.popular .control-btn .next,
+.popular .control-btn .prev {
+  top: 100%;
+  background: none;
+}
+.popular .control-btn .prev {
+  left: 45%;
+}
+.popular .control-btn .next {
+  right: 45%;
+}
+.popular .control-btn .prev i,
+.popular .control-btn .next i {
+  background: rgba(0, 0, 0, 0.05);
+  color: black;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.popular .control-btn .prev i:hover,
+.popular .control-btn .next i:hover {
+  background: #31b675;
+  color: white;
+}
+/*----- control btn -------*/
+@media screen and (max-width: 768px) {
+  .popular .control-btn .prev {
+    left: 40%;
+  }
+  .popular .control-btn .next {
+    right: 42%;
+  }
+}

@@ -1,0 +1,46 @@
+.image-heading {
+  background-image: url("../../../public/Images/image-heading.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 30vh;
+  line-height: 30vh;
+  position: relative;
+  z-index: -2;
+}
+.image-heading .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.image-heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
+}
+.image-heading h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.image-heading button {
+  background: black;
+  color: white;
+  font-weight: 400;
+  padding: 15px 30px;
+  word-spacing: 5px;
+}
+.image-heading a {
+  color: #31b675;
+  cursor: pointer;
+}
+.image-heading span {
+  text-transform: capitalize;
+  word-spacing: 30px;
+}

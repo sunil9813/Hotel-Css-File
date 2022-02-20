@@ -1,0 +1,96 @@
+.aboutCard h4 {
+  color: #31b675;
+}
+.aboutCard h1 {
+  font-size: 35px;
+  font-weight: 100;
+}
+.aboutCard h1 span {
+  font-weight: bold;
+}
+.aboutCard p {
+  margin-top: 20px;
+  font-weight: 300;
+}
+.aboutCard .row1 {
+  padding-right: 30px;
+}
+.aboutCard .row.image,
+.aboutCard .image {
+  position: relative;
+}
+.aboutCard .control-btn button {
+  left: 40%;
+}
+.aboutCard .control-btn i {
+  font-size: 20px;
+}
+.aboutCard .image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89.5%;
+  height: 44vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.aboutCard .image::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  z-index: -1;
+}
+.aboutCard .control-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  left: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  z-index: -1;
+}
+.features .flex_space {
+  flex-direction: row-reverse;
+}
+.features img {
+  width: 90%;
+}
+.features .control-btn,
+.features .image::after,
+.features .image::before,
+.features .control-btn::before {
+  display: none;
+}
+.features h1 {
+  font-weight: bold;
+}
+.features h1 span {
+  color: #31b675;
+}
+@media screen and (max-width: 768px) {
+  .features .flex_space,
+  .aboutCard {
+    flex-direction: column;
+  }
+  .aboutCard .image::after,
+  .aboutCard .image::before,
+  .aboutCard .control-btn::before {
+    display: none;
+  }
+  .aboutCard .row {
+    width: 100%;
+  }
+  .aboutCard .image {
+    margin-top: 50px;
+  }
+  .aboutCard img {
+    width: 100%;
+  }
+}
